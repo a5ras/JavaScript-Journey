@@ -15,11 +15,11 @@ This repository contains all my notes, exercises, and projects as I learn JavaSc
 This repo is organized into two main parts: my daily notes and my projects.
 
 * `/01-Notes/`: Contains all my daily study notes, broken down by topic.
-* *  `/01-JavaScript-Basics/`: Notes on JavaScript Basics.
-* *  `/02-Numbers-and-Math/`: Notes on Numbers & Math.
-* * `/03-Strings/`: Notes on Strings.
-* * `/04-HTML-CSS-JS-Review/`: Notes on HTML, CSS, & JavaScript Review.
-* `/05-Variables/`: Notes on Variables.
-* `/06-Booleans-and-If-Statements/`: Notes on Booleans & If-Statements.
-* `/07-Functions/`: Notes on Functions.
+  *  `/01-JavaScript-Basics/`: Notes on JavaScript Basics.
+  *  `/02-Numbers-and-Math/`: Notes on Numbers & Math.
+  * `/03-Strings/`: Notes on Strings.
+  * `/04-HTML-CSS-JS-Review/`: Notes on HTML, CSS, & JavaScript Review.
+  * `/05-Variables/`: Notes on Variables.
+  * `/06-Booleans-and-If-Statements/`: Notes on Booleans & If-Statements.
+  * `/07-Functions/`: Notes on Functions.
 * `/02-Projects/`: Contains all the small applications and projects I build to practice what I've learned.
