@@ -1,26 +1,26 @@
 # Lesson 02: Numbers and Math
 
-This lesson focuses on how JavaScript handles numbers and mathematical operations, using the Amazon cart project (`supersimple.dev/projects/amazon`) as a practical example.
+This lesson focuses on how JavaScript handles numbers and mathematical operations, using the Amazon cart project (supersimple.dev/projects/amazon) as a practical example. Go to the webpage and open the console as we did last lesson.
 
 ---
 
 ## Basic Math Operations
 
-JavaScript can perform standard mathematical calculations directly in the console or in scripts.
+JavaScript can perform standard mathematical calculations directly in the console or in scripts. Let's some of them in the console.
 
-* **Addition (`+`):**
+* **Addition ( + ):**
     ```javascript
     2 + 2; // Output: 4
     ```
-* **Subtraction (`-`):**
+* **Subtraction ( - ):**
     ```javascript
     10 - 3; // Output: 7
     ```
-* **Multiplication (`*`):**
+* **Multiplication ( * ):**
     ```javascript
     10 * 3; // Output: 30
     ```
-* **Division (`/`):**
+* **Division ( / ):**
     ```javascript
     10 / 2; // Output: 5
     ```
@@ -38,7 +38,7 @@ JavaScript can perform standard mathematical calculations directly in the consol
     ```javascript
     2.2 + 2.2; // Output: 4.4
     ```
-* Whole numbers (like 2, 3, 4) are called **integers**.
+* Whole numbers, like 2, 3, 4 are called **integers**.
 
 ---
 
@@ -46,9 +46,9 @@ JavaScript can perform standard mathematical calculations directly in the consol
 
 JavaScript follows the standard mathematical order of operations (often remembered by acronyms like PEMDAS/BODMAS):
 
-1.  **Brackets/Parentheses `()`** have the highest priority. Calculations inside brackets are done first.
-2.  **Multiplication (`*`) and Division (`/`)** are done next, from left to right.
-3.  **Addition (`+`) and Subtraction (`-`)** are done last, from left to right.
+1.  **Brackets/Parentheses ()** have the highest priority. Calculations inside brackets are done first.
+2.  **Multiplication (*) and Division (/)** are done next, from left to right.
+3.  **Addition (+) and Subtraction (-)** are done last, from left to right.
 
 ```javascript
 1 + 1 * 3; // Output: 4 (Multiplication is done first: 1 * 3 = 3, then 1 + 3 = 4)
@@ -59,7 +59,7 @@ JavaScript follows the standard mathematical order of operations (often remember
 
 **Syntax for Brackets:**
 
-  * Requires a matching open `(` and close `)` bracket.
+  * Requires a matching open ( and close ) bracket.
   * Must contain a complete calculation inside.
 
 -----
@@ -77,7 +77,6 @@ Computers sometimes struggle to store decimal numbers (floats) perfectly due to 
 1.  Perform all calculations in **cents** (using integers).
 2.  Convert back to dollars only at the very end by **dividing by 100**.
 
-<!-- end list -->
 
 ```javascript
 // Instead of 20.95 + 7.99
@@ -86,16 +85,16 @@ Computers sometimes struggle to store decimal numbers (floats) perfectly due to 
 
 -----
 
-##  Rounding Numbers: `Math.round()`
+##  Rounding Numbers: Math.round()
 
-JavaScript provides a built-in object `Math` with useful math functions. `Math.round()` rounds a number to the nearest integer.
+JavaScript provides a built-in object Math with useful math functions. Math.round() rounds a number to the nearest integer.
 
 ```javascript
 Math.round(2.2); // Output: 2
 Math.round(2.8); // Output: 3
 ```
 
-**Rounding Money:** When calculating money (like taxes), it's often necessary to round to the nearest cent. Combine the "calculate in cents" best practice with `Math.round()`:
+**Rounding Money:** When calculating money (like taxes), it's often necessary to round to the nearest cent. Combine the "calculate in cents" best practice with Math.round():
 
 ```javascript
 // Example: Calculate 10% tax on $28.94
@@ -121,15 +120,15 @@ Learning to code involves searching for solutions online.
 
 ##  Lesson 2 Exercises
 
-  * **2a.** Calculate `1 + 2 * 3 + 4`.
-  * **2b.** Calculate `(1 + 2) * (3 + 4)`.
-  * **2c.** Calculate `1 + 2 * (3 + 4 / 2)`.
-  * **2d.** Calculate `Math.round(2.2)`.
-  * **2e.** Calculate `Math.round(8.7)`.
+  * **2a.** Calculate 1 + 2 * 3 + 4.
+  * **2b.** Calculate (1 + 2) * (3 + 4).
+  * **2c.** Calculate 1 + 2 * (3 + 4 / 2).
+  * **2d.** Calculate Math.round(2.2).
+  * **2e.** Calculate Math.round(8.7).
   * **2f.** A toaster costs $18.50 and a T-shirt costs $7.50. Calculate the total cost *in cents*.
-  * **2g.** Calculate a 10% tax on the total cost from 2f *in cents*. Round to the nearest cent using `Math.round()`.
+  * **2g.** Calculate a 10% tax on the total cost from 2f *in cents*. Round to the nearest cent using Math.round().
   * **2h.** Calculate a 20% tax on the total cost from 2f *in cents*. Don't round yet.
-  * **2i.** Using the result from 2h, round it to the nearest cent using `Math.round()`.
+  * **2i.** Using the result from 2h, round it to the nearest cent using Math.round().
 
 -----
 
