@@ -1,20 +1,10 @@
-
-Okay, I can do that. I'll remember the structure and content you finalized for your Lesson 1 notes.
-
-Now, let's move on to Lesson 2: Numbers and Math, based on the video.
-
------
-
-### **Copy this block into `02-Numbers-and-Math/notes.md`**
-
-````markdown
-# Lesson 02: Numbers and Math (Based on SuperSimpleDev Course)
+# Lesson 02: Numbers and Math
 
 This lesson focuses on how JavaScript handles numbers and mathematical operations, using the Amazon cart project (`supersimple.dev/projects/amazon`) as a practical example.
 
 ---
 
-## 🔢 Basic Math Operations
+## Basic Math Operations
 
 JavaScript can perform standard mathematical calculations directly in the console or in scripts.
 
@@ -37,7 +27,7 @@ JavaScript can perform standard mathematical calculations directly in the consol
 
 ---
 
-## ✨ Syntax Rules
+##  Syntax Rules
 
 * Math syntax in JavaScript is straightforward, similar to standard math notation.
 * Calculations can involve more than two numbers:
@@ -52,7 +42,7 @@ JavaScript can perform standard mathematical calculations directly in the consol
 
 ---
 
-## ⚙️ Order of Operations (Operator Precedence)
+##  Order of Operations (Operator Precedence)
 
 JavaScript follows the standard mathematical order of operations (often remembered by acronyms like PEMDAS/BODMAS):
 
@@ -74,7 +64,7 @@ JavaScript follows the standard mathematical order of operations (often remember
 
 -----
 
-## ⚠️ Floating-Point Inaccuracy
+##  Floating-Point Inaccuracy
 
 Computers sometimes struggle to store decimal numbers (floats) perfectly due to their binary (0s and 1s) nature. This can lead to small inaccuracies in calculations.
 
@@ -96,7 +86,7 @@ Computers sometimes struggle to store decimal numbers (floats) perfectly due to 
 
 -----
 
-## 🔄 Rounding Numbers: `Math.round()`
+##  Rounding Numbers: `Math.round()`
 
 JavaScript provides a built-in object `Math` with useful math functions. `Math.round()` rounds a number to the nearest integer.
 
@@ -119,7 +109,7 @@ Math.round((2095 + 799) * 0.1) / 100; // Calculates 10% tax and rounds correctly
 
 -----
 
-## 🔍 Searching for Code: Using Google
+##  Searching for Code: Using Google
 
 Learning to code involves searching for solutions online.
 
@@ -129,7 +119,7 @@ Learning to code involves searching for solutions online.
 
 -----
 
-## ✏️ Lesson 2 Exercises
+##  Lesson 2 Exercises
 
   * **2a.** Calculate `1 + 2 * 3 + 4`.
   * **2b.** Calculate `(1 + 2) * (3 + 4)`.
@@ -143,16 +133,10 @@ Learning to code involves searching for solutions online.
 
 -----
 
-## 🏆 Challenge Exercises
+##  Challenge Exercises
 
   * **2j.** You order 1 coffee ($5.99) and 1 bagel ($2.95). Calculate the total cost before tax. Follow best practices for money.
   * **2k.** Calculate a 10% tax for the order in 2j. Round to the nearest cent.
   * **2l.** Calculate the total cost *including* tax for the order in 2j.
 
-*(Exercise details adapted from video and common practice)*
-
-```
-
 ---
-Let me know when you're ready to proceed with **Lesson 3: Strings**!
-```
