@@ -89,7 +89,8 @@ Syntax refers to the rules we must follow when writing code, like grammar in Eng
 ## Challenge Exercises
 
   * **1h.** You order a T-shirt for $10, socks for $8, and dinner plates for $20. Use JavaScript to calculate the total cost.
-  * **1i.** Your bank account has $100. You spend $20 on lunch, $50 on dinner, and earn $200 from your job. Calculate how much money you have.
+  * **1i.** Your bank account has $100. You spend $20 on lunch, $50 on dinner, and earn $200 from your job.
+    * Calculate how much money you have.
   * **1j.** Use *document.body.innerHTML* to make the web page blank.
     
 ---
