@@ -22,4 +22,9 @@ This repo is organized into two main parts: my daily notes and my projects.
   * `/05-Variables/`: Notes on Variables.
   * `/06-Booleans-and-If-Statements/`: Notes on Booleans & If-Statements.
   * `/07-Functions/`: Notes on Functions.
+   * `/08-Objects/`: Notes on Objects.
+    * `/09-Document-Object-Model/`: Notes on the Document Object Model (DOM).
+    * `/10-HTML-CSS-JS-Project/`: Notes on the HTML, CSS, & JavaScript Project (Rock Paper Scissors with CSS).
+    * `/11-Arrays-and-Loops/`: Notes on Arrays and Loops.
+    * `/12-Advanced-Functions/`: Notes on Advanced Functions
 * `/Projects/`: Contains all the small applications and projects I build to practice what I've learned.
