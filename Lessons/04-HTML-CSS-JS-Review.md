@@ -155,11 +155,11 @@ There are two primary ways to include JavaScript in an HTML file:
 
 Comments are notes in the code ignored by the computer, used for explanation or temporarily disabling code.
 
-  * **HTML Comments:** \`\`
-  * **CSS Comments:** `/* Comment text */`
+  * **HTML Comments:** *<!---->*
+  * **CSS Comments:** */* Comment text */*
   * **JavaScript Comments:**
-      * Single-line: `// Comment text`
-      * Multi-line: `/* Comment text spanning multiple lines */`
+      * Single-line: *// Comment text*
+      * Multi-line: */* Comment text spanning multiple lines */*
 
 -----
 
