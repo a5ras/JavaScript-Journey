@@ -212,7 +212,7 @@ Use console.log() frequently to check values and understand what your code is do
   * **4s.** Create an *index.html* file. Add the basic structure. Set the title to "Challenge Exercises".
   * **4t.** Add the text "Amazon" inside the body.
   * **4u.** Make the "Amazon" text a link that goes to *amazon.com*. Set it to open in a new tab (Hint: research the *<a>* tag and its *href* and *target* attributes).
-  * **4v.** Add the text "Back to Google" below the Amazon link. Make it a link to `google.com`.
+  * **4v.** Add the text "Back to Google" below the Amazon link. Make it a link to google.com.
   * **4w.** Add the text "Nike Black Running Shoes".
   * **4x.** Below the Nike text, add the price "$109 - in stock.".
   * **4y.** Below the price, add an "Add to Cart" button.
