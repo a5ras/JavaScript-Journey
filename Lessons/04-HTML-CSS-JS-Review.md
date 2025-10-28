@@ -1,4 +1,4 @@
-# Lesson 04: HTML CSS Review, console.log (Based on SuperSimpleDev Course)
+# 04: HTML CSS Review, console.log
 
 This lesson reviews the basics of HTML and CSS needed for JavaScript development and introduces the `console.log()` command. It also covers setting up a code editor.
 
