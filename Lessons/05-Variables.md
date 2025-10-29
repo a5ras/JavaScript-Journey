@@ -228,5 +228,3 @@ Let's apply variables to build a simple cart quantity tracker.
   * **5n.** The Fahrenheit to Celsius formula is $C = (F - 32) \times \frac{5}{9}$. Create a variable `fahrenheit` and calculate Celsius. Display 'X degrees Fahrenheit is Y degrees Celsius'.
   * **5o.** Modify the cart quantity page: prevent the quantity from going below 0. (Hint: Use an `if` statement).
   * **5p.** Modify the cart quantity page: prevent the quantity from going above 10. (Hint: Use an `if` statement).
-
-*(Exercise details adapted from video and common practice)*
