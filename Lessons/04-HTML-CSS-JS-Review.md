@@ -217,5 +217,3 @@ Use console.log() frequently to check values and understand what your code is do
   * **4x.** Below the Nike text, add the price "$109 - in stock.".
   * **4y.** Below the price, add an "Add to Cart" button.
   * **4z.** Below that, add a "Buy now" button.
-
-*(Exercise details adapted from video and common practice)*
