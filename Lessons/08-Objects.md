@@ -1,20 +1,20 @@
-# Lesson 08: Objects (Based on SuperSimpleDev Course)
+# Lesson 08: Objects
 
 This lesson introduces objects, a fundamental data structure in JavaScript used for grouping related values together. We'll use objects to add a score to the Rock Paper Scissors game.
 
 ---
 
-## 📦 What is an Object?
+## What is an Object?
 
 An **object** lets us group multiple related values together. Think of it like a container (similar to a variable) but capable of holding multiple pieces of information under named labels.
 
 ---
 
-## ✨ Creating and Using Objects
+## Creating and Using Objects
 
 ### Syntax for Creating Objects
 
-Objects are created using **curly braces `{}`**. Inside, we define **properties** (or **keys**) and their corresponding **values**.
+Objects are created using **curly braces {}**. Inside, we define **properties** (or **keys**) and their corresponding **values**.
 
 ```javascript
 // Creating an object to represent a product
@@ -27,13 +27,13 @@ const product = {
 console.log(product); // Displays the entire object
 ````
 
-  * **Property-Value Pair:** Each entry in an object consists of a property name (like `name`) and its associated value (like `'socks'`), separated by a colon `:`.
-  * **Commas:** Property-value pairs are separated by commas `,`.
+  * **Property-Value Pair:** Each entry in an object consists of a property name (like *name*) and its associated value (like *'socks'*), separated by a colon *:*.
+  * **Commas:** Property-value pairs are separated by commas *,*.
   * **Values:** Can be any JavaScript type (string, number, boolean, even other objects or functions).
 
 ### Accessing Properties: Dot Notation
 
-We can access the value of a specific property using **dot notation**: `objectName.propertyName`.
+We can access the value of a specific property using **dot notation**: **objectName.propertyName**.
 
 ```javascript
 console.log(product.name); // Output: 'socks'
@@ -42,7 +42,7 @@ console.log(product.price); // Output: 1090
 
 ### Modifying Properties
 
-You can change the value associated with a property using dot notation and the assignment operator `=`.
+You can change the value associated with a property using dot notation and the assignment operator =.
 
 ```javascript
 product.name = 'cotton socks';
@@ -61,7 +61,7 @@ console.log(product); // Object now includes newProperty: true
 
 ### Removing Properties
 
-The `delete` keyword removes a property from an object.
+The *delete* keyword removes a property from an object.
 
 ```javascript
 delete product.newProperty;
@@ -72,17 +72,17 @@ console.log(product); // newProperty is now removed
 
 Objects are just another type of value in JavaScript.
 
-  * You can save them in variables (`const` or `let`).
-  * You can check their type: `typeof product;` returns `'object'`.
+  * You can save them in variables (*const* or *let*).
+  * You can check their type: *typeof product;* returns *'object'*.
 
 **Why use objects?**
 
   * **Organization:** Group related data together (like all details of a product).
-  * **Convenience:** Work with multiple values as a single unit (e.g., `console.log(product)` shows everything).
+  * **Convenience:** Work with multiple values as a single unit (e.g., *console.log(product)* shows everything).
 
 -----
 
-## 🎯 Project: Adding Score to Rock Paper Scissors
+## Project: Adding Score to Rock Paper Scissors
 
 Objects are perfect for storing the RPS score (wins, losses, ties).
 
@@ -95,7 +95,7 @@ Objects are perfect for storing the RPS score (wins, losses, ties).
 
 **Implementation:**
 
-1.  **Create Score Object:** Define the score object (usually outside functions, so it persists between games). Use `let` if using `localStorage` isn't implemented yet, otherwise `const` might be okay if loading/saving handles updates.
+1.  **Create Score Object:** Define the score object (usually outside functions, so it persists between games). Use *let* if using *localStorage* isn't implemented yet, otherwise *const* might be okay if loading/saving handles updates.
     ```javascript
     // (Inside <script> or your .js file, outside functions)
     let score = {
@@ -104,7 +104,7 @@ Objects are perfect for storing the RPS score (wins, losses, ties).
       ties: 0
     };
     ```
-2.  **Update Score:** Inside the `playGame` function, after determining the `result`, update the score object using dot notation and increment operators.
+2.  **Update Score:** Inside the *playGame* function, after determining the *result*, update the score object using dot notation and increment operators.
     ```javascript
     // (Inside playGame function, after getting 'result')
     if (result === 'You win.') {
@@ -115,7 +115,7 @@ Objects are perfect for storing the RPS score (wins, losses, ties).
       score.ties += 1;
     }
     ```
-3.  **Display Score:** Modify the `alert()` (or page display) to include the score properties.
+3.  **Display Score:** Modify the *alert()* (or page display) to include the score properties.
     ```javascript
     alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
     Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
@@ -132,11 +132,11 @@ Objects are perfect for storing the RPS score (wins, losses, ties).
 
 -----
 
-## 🔧 More Object Details
+## More Object Details
 
 ### Accessing Properties: Bracket Notation
 
-Besides dot notation, you can access properties using **square brackets `[]`** with the property name as a **string** inside.
+Besides dot notation, you can access properties using **square brackets *[]*** with the property name as a **string** inside.
 
 ```javascript
 const product2 = {
@@ -190,19 +190,18 @@ const product4 = {
 product4.displayProduct(); // Call the method using () -> Output: Product: shirt
 ```
 
-  * **`this` Keyword:** Inside a method, `this` refers to the object the method was called on.
-  * **Built-in Methods:** We've already used methods like `console.log()` (`log` is a method of the `console` object) and `Math.random()` (`random` is a method of the `Math` object).
+  * ***this* Keyword:** Inside a method, *this* refers to the object the method was called on.
+  * **Built-in Methods:** We've already used methods like *console.log()* (*log* is a method of the *console* object) and *Math.random()* (*random* is a method of the *Math* object).
 
-### Built-in Objects: `JSON` and `localStorage`
+### Built-in Objects: *JSON* and *localStorage*
 
   * **JSON (JavaScript Object Notation):**
 
-      * A **syntax** similar to JavaScript objects but simpler (properties and strings **must** use double quotes `""`, no functions allowed).
+      * A **syntax** similar to JavaScript objects but simpler (properties and strings **must** use double quotes *""*, no functions allowed).
       * Used for sending data between computers (universal format) and storing data.
-      * **`JSON.stringify(object)`:** Converts a JavaScript object/value into a JSON **string**.
-      * **`JSON.parse(jsonString)`:** Converts a JSON string back into a JavaScript object/value.
-
-    <!-- end list -->
+      * ***JSON.stringify(object)*:** Converts a JavaScript object/value into a JSON **string**.
+      * ***JSON.parse(jsonString)*:** Converts a JSON string back into a JavaScript object/value.
+    
 
     ```javascript
     const product = { name: "socks", price: 1090 };
@@ -213,15 +212,14 @@ product4.displayProduct(); // Call the method using () -> Output: Product: shirt
     console.log(parsedObject); // Output: {name: 'socks', price: 1090} (An object!)
     ```
 
-  * **`localStorage`:**
+  * ***localStorage*:**
 
       * A built-in browser object that allows saving data **permanently** (persists even after closing/refreshing the browser). Variables are temporary and reset on refresh.
-      * **Only stores strings.** Use `JSON.stringify()` before saving objects/arrays and `JSON.parse()` after retrieving them.
-      * **`localStorage.setItem('key', 'value')`:** Saves a string value under a specific key name.
-      * **`localStorage.getItem('key')`:** Retrieves the string value associated with a key (returns `null` if the key doesn't exist).
-      * **`localStorage.removeItem('key')`:** Removes a saved item.
+      * **Only stores strings.** Use *JSON.stringify()* before saving objects/arrays and *JSON.parse()* after retrieving them.
+      * ***localStorage.setItem('key', 'value')*:** Saves a string value under a specific key name.
+      * ***localStorage.getItem('key')*:** Retrieves the string value associated with a key (returns *null* if the key doesn't exist).
+      * ***localStorage.removeItem('key')*:** Removes a saved item.
 
-    <!-- end list -->
 
     ```javascript
     // Save the score object to localStorage
@@ -242,7 +240,7 @@ product4.displayProduct(); // Call the method using () -> Output: Product: shirt
 
 -----
 
-## 🔗 Objects are References
+## Objects are References
 
 Unlike simple values (numbers, strings, booleans), objects (and arrays) work differently when assigned or copied.
 
@@ -255,13 +253,13 @@ Unlike simple values (numbers, strings, booleans), objects (and arrays) work dif
     object1.message = 'good job';
     console.log(object2.message); // Output: 'good job' (Changing via object1 affects object2)
     ```
-  * **Comparison (`===`):** Compares references, not the actual contents of the objects. Two separate objects with identical content will *not* be equal.
+  * **Comparison (===):** Compares references, not the actual contents of the objects. Two separate objects with identical content will *not* be equal.
     ```javascript
     const object3 = { message: 'good job' };
     console.log(object1 === object3); // Output: false (Different objects, different references)
     console.log(object1 === object2); // Output: true (Same reference)
     ```
-  * **`const` with Objects:** `const` prevents reassigning the *variable* (changing which reference it holds), but it does **not** prevent changing the *properties inside* the object the reference points to.
+  * ***const* with Objects:** *const* prevents reassigning the *variable* (changing which reference it holds), but it does **not** prevent changing the *properties inside* the object the reference points to.
     ```javascript
     const object1 = { message: 'hello' };
     object1.message = 'new value'; // This IS allowed with const objects
@@ -270,7 +268,7 @@ Unlike simple values (numbers, strings, booleans), objects (and arrays) work dif
 
 -----
 
-## ✨ Object Shortcuts
+## Object Shortcuts
 
 ### Destructuring
 
@@ -326,25 +324,27 @@ object6.method(); // Output: 'method'
 
 -----
 
-## ✏️ Lesson 8 Exercises
+## Lesson 8 Exercises
 
-  * **8a.** Create an object `product` with `name: 'basketball'` and `price: 2095`. Log it.
-  * **8b.** Increase the price by 500 cents. Log the updated object.
-  * **8c.** Add a property `'delivery-time': '3 days'` using bracket notation. Log the object.
-  * **8d.** Create an object `product2` with `name: 'shirt'` and `price: 799`.
-  * **8e.** Create a function `comparePrice(product1, product2)` that returns the product object with the lower price. If prices are equal, return either one.
-  * **8f.** Create a function `isSameProduct(product1, product2)` that returns `true` if two products have the same `name` and `price`, `false` otherwise.
-  * **8g.** Convert 'Good Morning' to lowercase using a string method (Hint: search "javascript string to lower case"). Log the result.
-  * **8h.** Repeat 'test' 5 times using a string method (Hint: search "javascript string repeat"). Log the result.
-  * **8i.** In the RPS project, save the score to `localStorage` after updating it.
-  * **8j.** In the RPS project, load the score from `localStorage` when the page loads. Use a default score if nothing is saved.
-  * **8k.** In the RPS project, update the "Reset Score" button to also remove the score from `localStorage`.
+* **8a.** Create an object **product** with **name: 'basketball'** and **price: 2095**. Log it.
+* **8b.** Increase the price by 500 cents. Log the updated object.
+* **8c.** Add a property **'delivery-time': '3 days'** using bracket notation. Log the object.
+* **8d.** Create an object **product2** with **name: 'shirt'** and **price: 799**.
+* **8e.** Create a function **comparePrice(product1, product2)** that returns the product object with the lower price. If prices are equal, return either one.
+* **8f.** Create a function **isSameProduct(product1, product2)** that returns **true** if two products have the same **name** and **price**, **false** otherwise.
+* **8g.** Convert 'Good Morning' to lowercase using a string method (Hint: search "javascript string to lower case"). Log the result.
+* **8h.** Repeat 'test' 5 times using a string method (Hint: search "javascript string repeat"). Log the result.
+* **8i.** In the RPS project, save the score to **localStorage** after updating it.
+* **8j.** In the RPS project, load the score from **localStorage** when the page loads. Use a default score if nothing is saved.
+* **8k.** In the RPS project, update the "Reset Score" button to also remove the score from **localStorage**.
 
------
+---
 
-## 🏆 Challenge Exercises
+## Challenge Exercises
 
-  * **8l.** Use `JSON.stringify()` to convert the score object to a string. Log it.
-  * **8m.** Use `JSON.parse()` to convert the string from 8l back to an object. Log it.
-  * **8n.** Explain why `JSON.parse(localStorage.getItem('score')) || { wins: 0, ... }` works for setting a default score. (Answer: `getItem` returns `null` if not found. `JSON.parse(null)` returns `null`. `null` is falsy, so the `||` operator uses the default object).
-  * **8o.** Modify the RPS score reset: use `confirm('Are you sure?')` before resetting. Only reset if the user clicks OK.
+* **8l.** Use **JSON.stringify()** to convert the score object to a string. Log it.
+* **8m.** Use **JSON.parse()** to convert the string from 8l back to an object. Log it.
+* **8n.** Explain why **JSON.parse(localStorage.getItem('score')) || { wins: 0, ... }** works for setting a default score. (Answer: **getItem** returns **null** if not found. **JSON.parse(null)** returns **null**. **null** is falsy, so the **||** operator uses the default object).
+* **8o.** Modify the RPS score reset: use **confirm('Are you sure?')** before resetting. Only reset if the user clicks OK.
+
+---
