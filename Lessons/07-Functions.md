@@ -252,5 +252,3 @@ A function can call other functions. In our RPS example, `playGame` calls `pickC
   * **7k.** Create a function `min(num1, num2)` that returns the smaller of two numbers.
   * **7l.** Create a function `max(num1, num2)` that returns the larger number.
   * **7m.** Modify RPS: Create separate functions for comparing moves, e.g., `getResult(playerMove, computerMove)`, which returns 'Win', 'Lose', or 'Tie'. Then call this inside `playGame`.
-
-*(Exercise details adapted from video and common practice)*
