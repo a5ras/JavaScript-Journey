@@ -404,5 +404,3 @@ Useful for setting default values when a value might be missing (falsy like `und
   * **6o.** Modify Rock Paper Scissors: Add a "Reset Score" button that sets the score variables back to 0.
   * **6p.** Use the ternary operator to calculate the cost: If `isMember` is true, cost is $2, else cost is $10.
   * **6q.** Simulate a coin flip game. Ask the user to guess 'heads' or 'tails' using `prompt()`. Compare their guess to a random flip (`Math.random() < 0.5`). Alert 'You win\!' or 'You lose.'.
-
-*(Exercise details adapted from video and common practice)*
