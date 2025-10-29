@@ -184,5 +184,3 @@ Template strings have special features:
     Total before tax: $13.93
     Estimated tax (10%): $1.40
     ```
-
-*(Exercise details adapted from video and common practice)*
