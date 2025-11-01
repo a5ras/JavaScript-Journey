@@ -23,7 +23,7 @@ We have already used this object:
 
 How do we control a *specific* element, not just the whole body?
 
-### `document.querySelector()`
+### **document.querySelector()**
 
 **document.querySelector()** is a built-in method (a function on an object) that lets us find *any* single element on the page using CSS selectors.
 
@@ -39,8 +39,8 @@ How do we control a *specific* element, not just the whole body?
     ```
 
 2.  **Selecting by Class Name:** (This is the most common and recommended way)
-    * **HTML:** `<button class="js-button">Click</button>`
-    * **JS:** You must include the dot (`.`) just like in CSS.
+    * **HTML:** *<button class="js-button">Click</button>*
+    * **JS:** You must include the dot (*.*) just like in CSS.
     ```javascript
     document.querySelector('.js-button');
     ```
@@ -68,7 +68,7 @@ Once you have an element, you can change its content:
     document.querySelector('button').innerHTML = 'Changed';
     ```
   * **.innerText**: Gets or sets only the *text* inside an element.
-      * **Problem:** If your HTML has extra spaces or newlines (like `<button> Subscribe </button>`), **.innerHTML** will include them. Comparing **.innerHTML === 'Subscribe'** will fail.
+      * **Problem:** If your HTML has extra spaces or newlines (like *<button> Subscribe </button>*), **.innerHTML** will include them. Comparing **.innerHTML === 'Subscribe'** will fail.
       * **Solution:** **.innerText** ignores the extra spaces and newlines, giving you just the clean text.
     <!-- end list -->
     ```javascript
@@ -301,13 +301,13 @@ function calculateTotal() {
 
   * **Type Coercion Quirk:** JavaScript automatically converts types for **-**, **\***, and **/**.
 
-      * `'25' - 5` = `20` (works)
-      * `'25' * 2` = `50` (works)
+      * '25' - 5 = 20 (works)
+      * '25' * 2 = 50 (works)
       * But **+** is used for both addition and string concatenation, so it defaults to concatenation.
-      * `'25' + 5` = `'255'` (doesn't work)
+      * '25' + 5 = '255' (doesn't work)
       * **Best Practice:** Don't rely on automatic coercion. Always manually convert your types (e.g., use **Number()**) when doing math.
 
-  * **The `window` Object:**
+  * **The *window* Object:**
 
       * The **window** object represents the entire browser window.
       * It's the top-level, global object.
