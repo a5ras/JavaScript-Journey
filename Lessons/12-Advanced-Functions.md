@@ -46,36 +46,117 @@ document.body.addEventListener('keydown', (event) => {
 
 ## 2\. Functions are Values
 
-In JavaScript, functions are just another type of value, like strings, numbers, or objects.
+In JavaScript, **functions are values**. This is a core concept. Just like a string (**'hello'**) is a value, and a number (**5**) is a value, a function is also a value.
+This means we can treat functions like any other value:
 
   * This means we can **save a function in a variable**.
   * We can **pass a function into another function** as an argument.
   * We can **return a function from another function**.
 
-**Example:**
 
-```javascript
-// We save an anonymous function (a function without a name)
-// in a variable called 'function1'.
+**Saving a Function in a Variable:**
+
+So far, we've created named functions like this:
+**function greet() { console.log('hello'); }**
+
+But we can also create an **anonymous function** (a function with no name) and save it in a variable:
+
+```
 const function1 = function() {
   console.log('hello');
 };
 
-console.log(function1); // Logs the function itself
-console.log(typeof function1); // Output: 'function'
+// Now the variable 'function1' holds the function value
+console.log(function1); // This will log the function itself
+console.log(typeof function1); // This will log: 'function'
 
-function1(); // Runs the function -> Output: 'hello'
+// To run the function, we call the variable with ()
+function1(); // This will log: 'hello'
 ```
 
-### Higher-Order Functions
+Because functions are values, we can pass them around, which leads to a very powerful feature:
 
-A function that either takes *another function as an argument* or *returns a function* is called a **Higher-Order Function**.
+## Higher-Order Functions
 
-We have already been using them\!
+A **Higher-Order Function** is any function that does one of two things (or both):
 
-  * **setInterval(function() { ... }, 1000);**: **setInterval** is a higher-order function. We pass an anonymous function into it.
-  * **element.addEventListener('click', function() { ... });**: **addEventListener** is a higher-order function. We pass an anonymous function (the "callback") into it.
+1.  Takes *another function* as an argument.
+2.  *Returns* a function.
 
+You have already been using Higher-Order Functions\!
+
+### Part 1: Functions that Take a Function as an Argument
+
+When we pass a function into another function, the function we pass in is called a **callback function**.
+
+**Example 1: `addEventListener`**
+
+```
+buttonElement.addEventListener('click', () => {
+  console.log('clicked');
+});
+```
+
+  * **`addEventListener`** is a **Higher-Order Function** because it takes a function as its second argument.
+  * The arrow function **() =\> { console.log('clicked'); }** is the **callback function**. We are "passing" this function to **addEventListener**, which will then "call it back" for us later (when the button is clicked).
+
+**Example 2: forEach**
+
+```
+[1, 2, 3].forEach((value, index) => {
+  console.log(value, index);
+});
+```
+
+  * **`.forEach()`** is a **Higher-Order Function**.
+  * The arrow function **(value, index) =\> { ... }** is the **callback function**. **forEach** runs this callback once for every item in the array.
+
+**Example 3: setTimeout**
+
+```
+setTimeout(() => {
+  console.log('timeout');
+}, 3000);
+```
+
+  * **setTimeout** is a **Higher-Order Function**.
+  * The arrow function **() =\> { ... }** is the **callback function**, which **setTimeout** will run after 3000 milliseconds.
+
+### Part 2: Functions that Return a Function
+
+This is the second half of the definition. A function can also *create and return* another function.
+
+**Example: createGreeter**
+
+```
+function createGreeter(name) {
+  // 'name' is a variable in the parent function
+  
+  // We create and return a *new* anonymous function
+  return () => {
+    // This inner function "closes over" the 'name' variable
+    // and "remembers" it, even after createGreeter has finished running.
+    console.log('Hello, ' + name);
+  };
+}
+
+// 1. We call createGreeter, passing in 'Alice'.
+// 2. It creates an inner function that remembers 'name = Alice'.
+// 3. It *returns* this new inner function, which we save in a variable.
+const greetAlice = createGreeter('Alice');
+
+// 1. We call createGreeter again, passing in 'Bob'.
+// 2. It creates a *different* inner function that remembers 'name = Bob'.
+const greetBob = createGreeter('Bob');
+
+// 3. Now, we call the functions we saved:
+greetAlice(); // Output: Hello, Alice
+greetBob();   // Output: Hello, Bob
+```
+
+Because the **createGreeter** function *returns a function*, it is also a **Higher-Order Function**.
+
+This concept of an inner function "remembering" the variables from its outer function (like the **name** variable) is called a **Closure**, which is the next topic.
 -----
 
 ## 3\. Advanced Loops: `forEach`
