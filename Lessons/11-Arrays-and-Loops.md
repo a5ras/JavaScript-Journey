@@ -519,7 +519,7 @@ function addTodo() {
 
 -----
 
-## ✏️ Lesson 11 Exercises
+## Lesson 11 Exercises
 
   * **11a.** You are given the array: **const nums = [10, 20, 30];**. Set the value at index 2 to 99.
   * **11b.** Create a function **getLastValue(array)** that takes an array and returns the last value.
@@ -537,7 +537,7 @@ function addTodo() {
 
 -----
 
-## 🏆 Challenge Exercises
+## Challenge Exercises
 
   * **11n.** In the to-do list, when you click 'Delete', the todo disappears immediately. Modify the code so it takes 1 second to disappear (Hint: use **setTimeout()** and **CSS transitions**).
   * **11o.** Make the "Add" button add the todo when you press "Enter" in *either* input field (Hint: check for **event.key === 'Enter'** in the **onkeydown** of both inputs).
