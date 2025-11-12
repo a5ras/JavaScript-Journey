@@ -14,8 +14,8 @@ function processInput(value) {
     if (displayScreen.value === "") {
       displayScreen.value = "0.";
     } else {
-      if (!displayScreen.value.includes(".")) {
-        displayScreen.value += value;
+          // Otherwise, just add the "."
+          displayScreen.value += value;
       }
     }
   } 
@@ -75,5 +75,6 @@ function handleKeyDown(event) {
     processInput(value);
   }
 }
+
 
 window.addEventListener('keydown', handleKeyDown);
