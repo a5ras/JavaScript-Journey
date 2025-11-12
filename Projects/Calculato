@@ -18,7 +18,7 @@ function processInput(value) {
         displayScreen.value += value;
       }
     }
-  } 
+  }
   else if (value === "=") {
     calculateResult();
   } 
@@ -77,3 +77,4 @@ function handleKeyDown(event) {
 }
 
 window.addEventListener('keydown', handleKeyDown);
+
