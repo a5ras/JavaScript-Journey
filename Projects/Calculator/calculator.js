@@ -10,15 +10,25 @@ function processInput(value) {
     let currentDisplayValue = displayScreen.value;
     displayScreen.value = currentDisplayValue.slice(0, -1);
   } 
+  
   else if (value === ".") {
     if (displayScreen.value === "") {
       displayScreen.value = "0.";
     } else {
-          // Otherwise, just add the "."
+      const parts = displayScreen.value.split(/([+\-*/])/);
+      
+      const lastPart = parts[parts.length - 1];
+
+      if (!lastPart.includes(".")) {
+        if (lastPart === "") {
+          displayScreen.value += "0.";
+        } else {
           displayScreen.value += value;
+        }
       }
     }
   } 
+
   else if (value === "=") {
     calculateResult();
   } 
@@ -61,7 +71,7 @@ function handleKeyDown(event) {
   if (key >= '0' && key <= '9') {
     value = key;
   } else if (key === "+" || key === "-" || key === "*" || key === "/" || key === ".") {
-    value = key; 
+    value = key;  
   } else if (key === "Enter" || key === "=") {
     value = "=";
   } else if (key === "Backspace") {
@@ -71,10 +81,9 @@ function handleKeyDown(event) {
   }
 
   if (value) {
-    event.preventDefault(); 
+    event.preventDefault();
     processInput(value);
   }
 }
-
 
 window.addEventListener('keydown', handleKeyDown);
