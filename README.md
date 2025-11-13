@@ -15,16 +15,31 @@ This repository contains all my notes, exercises, and projects as I learn JavaSc
 This repo is organized into two main parts: my daily notes and my projects.
 
 * `/Lessons/`: Contains all my daily study notes, broken down by topic.
-  * `/01-JavaScript-Basics/`: Notes on JavaScript Basics.
-  * `/02-Numbers-and-Math/`: Notes on Numbers & Math.
-  * `/03-Strings/`: Notes on Strings.
-  * `/04-HTML-CSS-JS-Review/`: Notes on HTML, CSS, & JavaScript Review.
-  * `/05-Variables/`: Notes on Variables.
-  * `/06-Booleans-and-If-Statements/`: Notes on Booleans & If-Statements.
-  * `/07-Functions/`: Notes on Functions.
-   * `/08-Objects/`: Notes on Objects.
+    * `/01-JavaScript-Basics/`: Notes on JavaScript Basics.
+    * `/02-Numbers-and-Math/`: Notes on Numbers & Math.
+    * `/03-Strings/`: Notes on Strings.
+    * `/04-HTML-CSS-JS-Review/`: Notes on HTML, CSS, & JavaScript Review.
+    * `/05-Variables/`: Notes on Variables.
+    * `/06-Booleans-and-If-Statements/`: Notes on Booleans & If-Statements.
+    * `/07-Functions/`: Notes on Functions.
+    * `/08-Objects/`: Notes on Objects.
     * `/09-Document-Object-Model/`: Notes on the Document Object Model (DOM).
     * `/10-HTML-CSS-JS-Project/`: Notes on the HTML, CSS, & JavaScript Project (Rock Paper Scissors with CSS).
     * `/11-Arrays-and-Loops/`: Notes on Arrays and Loops.
     * `/12-Advanced-Functions/`: Notes on Advanced Functions
 * `/Projects/`: Contains all the small applications and projects I build to practice what I've learned.
+    * `/buttonSubscribe/`: An interactive "Subscribe" button that toggles its state.
+        * **Core Concepts:** *DOM*, *.innerHTML*, *if-else logic*, *addEventListener()*.
+        * **[View Project Code](./Projects/buttonSubscribe/)**
+    * `/Simple Cart Quantity/`: A basic cart feature to track quantity.
+        * **Core Concepts:** *variables (let)*, *functions*, *onclick attributes*.
+        * **[View Project Code](./Projects/Simple%20Cart%20Quantity/)**
+    * `/Calculator/`: A fully functional digital calculator.
+        * **Core Concepts:** *DOM manipulation*, *event listeners*, *string concatenation*, *eval()*.
+        * **[View Project Code](./Projects/Calculator/)**
+    * `/PasswordGenarator/`: A tool that generates secure, random passwords.
+        * **Core Concepts:** *Math.random()*, *string manipulation*, *array methods*.
+        * **[View Project Code](./Projects/PasswordGenarator/)**
+    * `/Quote Generator Website/`: A site that displays a new, random quote on button click.
+        * **Core Concepts:** *Arrays*, *Math.random()*, *event listeners*, *.innerText*.
+        * **[View Project Code](./Projects/Quote%20Generator%20Website/)**
