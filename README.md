@@ -36,7 +36,7 @@ This repo is organized into two main parts: my daily notes and my projects.
         * **[View Project Code](./Projects/Simple%20Cart%20Quantity/)**
     * `/Calculator/`: A fully functional digital calculator.
         * **Core Concepts:** *DOM manipulation*, *event listeners*, *string concatenation*, *eval()*.
-        * **[View Project Code](./Projects/Calculator/)**
+        * **[View Project Code](https://a5ras.github.io/JavaScript-Journey/Projects/Calculator/)**
     * `/PasswordGenarator/`: A tool that generates secure, random passwords.
         * **Core Concepts:** *Math.random()*, *string manipulation*, *array methods*.
         * **[View Project Code](./Projects/PasswordGenarator/)**
