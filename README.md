@@ -30,16 +30,16 @@ This repo is organized into two main parts: my daily notes and my projects.
 * `/Projects/`: Contains all the small applications and projects I build to practice what I've learned.
     * `/buttonSubscribe/`: An interactive "Subscribe" button that toggles its state.
         * **Core Concepts:** *DOM*, *.innerHTML*, *if-else logic*, *addEventListener()*.
-        * **[View Project Code](./Projects/buttonSubscribe/)**
+        * **[View Project Code](https://a5ras.github.io/JavaScript-Journey/Projects/buttonSubscribe/)**
     * `/Simple Cart Quantity/`: A basic cart feature to track quantity.
         * **Core Concepts:** *variables (let)*, *functions*, *onclick attributes*.
-        * **[View Project Code](./Projects/Simple%20Cart%20Quantity/)**
+        * **[View Project Code](https://a5ras.github.io/JavaScript-Journey/Projects/Simple%20Cart%20Quantity/)**
     * `/Calculator/`: A fully functional digital calculator.
         * **Core Concepts:** *DOM manipulation*, *event listeners*, *string concatenation*, *eval()*.
         * **[View Project Code](https://a5ras.github.io/JavaScript-Journey/Projects/Calculator/)**
     * `/PasswordGenarator/`: A tool that generates secure, random passwords.
         * **Core Concepts:** *Math.random()*, *string manipulation*, *array methods*.
-        * **[View Project Code](./Projects/PasswordGenarator/)**
+        * **[View Project Code](https://a5ras.github.io/JavaScript-Journey/Projects/PasswordGenarator/)**
     * `/Quote Generator Website/`: A site that displays a new, random quote on button click.
         * **Core Concepts:** *Arrays*, *Math.random()*, *event listeners*, *.innerText*.
-        * **[View Project Code](./Projects/Quote%20Generator%20Website/)**
+        * **[View Project Code](https://a5ras.github.io/JavaScript-Journey/Projects/Quote%20Generator%20Website/)**
